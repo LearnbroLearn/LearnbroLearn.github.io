@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Free Website</title>
+  <meta name="description" content="A clean, modern one‑page website you can host for free." />
+  <style>
+    :root{
+      --bg:#0b1220;--card:#111a2e;--muted:#93a4c3;--text:#e9edf5;--brand:#6ea8fe;--brand-2:#7cf7d4;
+      --radius:18px;--shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;scroll-behavior:smooth;background:radial-gradient(1200px 800px at 80% -10%,rgba(124,247,212,.15),transparent),
+    radial-gradient(800px 600px at 0% 10%,rgba(110,168,254,.18),transparent),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;background:rgba(11,18,32,.6);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 0 0 3px rgba(255,255,255,.04)}
+    .links{display:flex;gap:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b1220;font-weight:600;border:none;cursor:pointer;box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.12);box-shadow:none}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:64px 0 32px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);padding:28px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    h1{font-size:clamp(32px,5vw,54px);line-height:1.05;margin:0 0 16px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.2vw,18px)}
+    .hero-cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:14px}
+    .grid{display:grid;gap:18px}
+    .features{grid-template-columns:repeat(3,1fr)}
+    .section{padding:56px 0}
+    h2{font-size:clamp(22px,3.6vw,34px);margin:0 0 12px}
+    p{color:var(--muted);line-height:1.6}
+    .gallery{grid-template-columns:repeat(3,1fr)}
+    .tile{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,rgba(110,168,254,.2),rgba(124,247,212,.2));border:1px dashed rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;color:#0b1220;font-weight:700}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);color:var(--text)}
+    label{font-size:14px;color:var(--muted)}
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    footer{padding:36px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+    .pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .contact{grid-template-columns:1fr}
+      form .row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"></div> My Brand</div>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="#">v1.0</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="card">
+        <span class="badge">🚀 Free & Fast • No code needed</span>
+        <h1>Launch a clean website in minutes</h1>
+        <p class="lead">Edit this text, drop in your images, and publish with GitHub Pages or Netlify — totally free. Mobile‑friendly, accessible, and modern by default.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="#work">See my work</a>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul>
+            <li>Single file, easy to edit</li>
+            <li>Responsive layout</li>
+            <li>Works offline as a static page</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick Tips</h3>
+          <p>Replace <strong>My Brand</strong> with your name or company. Swap the gallery tiles with your images by setting <code>background-image</code> in CSS or placing <code>&lt;img&gt;</code> tags.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="grid" style="grid-template-columns:1.2fr .8fr;gap:20px">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>Write a short intro about who you are and what you do. Keep it clear and friendly. Mention your location, years of experience, or key achievements.</p>
+        </div>
+        <div class="card">
+          <h2>Fast Facts</h2>
+          <ul>
+            <li>🏆 Award or milestone</li>
+            <li>🛠️ Skills: HTML, CSS, JS</li>
+            <li>📍 Based in India</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="grid features">
+        <article class="card"><h3>Consulting</h3><p>Short description of how you help clients and what problems you solve.</p></article>
+        <article class="card"><h3>Design</h3><p>Explain what you design (websites, logos, slide decks, etc.).</p></article>
+        <article class="card"><h3>Development</h3><p>Mention the tech you use and the kind of projects you love.</p></article>
+      </div>
+    </section>
+
+    <!-- Work/Projects Section -->
+    <section id="work" class="section">
+      <h2>Selected Work</h2>
+      <div class="grid gallery">
+        <div class="tile">Project 1</div>
+        <div class="tile">Project 2</div>
+        <div class="tile">Project 3</div>
+        <div class="tile">Project 4</div>
+        <div class="tile">Project 5</div>
+        <div class="tile">Project 6</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="grid contact">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Use this form (mailto) or replace with any form provider like Netlify Forms.</p>
+          <form action="mailto:you@example.com" method="post" enctype="text/plain">
+            <div class="row">
+              <div>
+                <label>Name</label>
+                <input name="name" required />
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="email" name="email" required />
+              </div>
+            </div>
+            <div style="margin-top:10px">
+              <label>Message</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <div style="margin-top:14px">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <aside class="card">
+          <h3>Find me</h3>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a><br>LinkedIn: <a href="#">/in/your-handle</a><br>X/Twitter: <a href="#">@yourhandle</a></p>
+          <p class="pill">Open to freelance projects</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • Built with ♥</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
