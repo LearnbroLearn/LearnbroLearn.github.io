@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LearnBroLearn</title>
-  <meta name="description" content="Welcome to LearnBroLearn — a modern, free one‑page website template you can host easily." />
+  <meta name="description" content="Welcome to LearnBroLearn — a modern, free one-page website template you can host easily." />
   <style>
     :root{
       --bg:#0b1220;--card:#111a2e;--muted:#93a4c3;--text:#e9edf5;--brand:#6ea8fe;--brand-2:#7cf7d4;
@@ -37,9 +37,6 @@
     .gallery{grid-template-columns:repeat(3,1fr)}
     .tile{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,rgba(110,168,254,.2),rgba(124,247,212,.2));border:1px dashed rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;color:#0b1220;font-weight:700}
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);color:var(--text)}
-    label{font-size:14px;color:var(--muted)}
-    form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     footer{padding:36px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
     .pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px}
     @media (max-width:900px){
@@ -47,7 +44,6 @@
       .features{grid-template-columns:1fr}
       .gallery{grid-template-columns:1fr 1fr}
       .contact{grid-template-columns:1fr}
-      form .row{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -140,33 +136,13 @@
     <section id="contact" class="section">
       <div class="grid contact">
         <div class="card">
-          <h2>Contact</h2>
-          <p>Use this form (mailto) or replace with any form provider like Netlify Forms.</p>
-          <form action="mailto:you@example.com" method="post" enctype="text/plain">
-            <div class="row">
-              <div>
-                <label>Name</label>
-                <input name="name" required />
-              </div>
-              <div>
-                <label>Email</label>
-                <input type="email" name="email" required />
-              </div>
-            </div>
-            <div style="margin-top:10px">
-              <label>Message</label>
-              <textarea name="message" rows="5" required></textarea>
-            </div>
-            <div style="margin-top:14px">
-              <button class="btn" type="submit">Send</button>
-            </div>
-          </form>
+          <h2>Connect With Us</h2>
+          <p>Follow LearnBroLearn on our official social channels.</p>
+          <div>
+            <p>Instagram: <a href="https://www.instagram.com/learnbrolearn?igsh=MXZlYnA5cnhqdGVqMw==" target="_blank">@learnbrolearn</a></p>
+            <p>YouTube: <a href="https://youtube.com/@learnbrolearn?si=jw_UBfSOnI8Vwq-J" target="_blank">LearnBroLearn Channel</a></p>
+          </div>
         </div>
-        <aside class="card">
-          <h3>Find me</h3>
-          <p>Email: <a href="mailto:you@example.com">you@example.com</a><br>LinkedIn: <a href="#">/in/your-handle</a><br>X/Twitter: <a href="#">@yourhandle</a></p>
-          <p class="pill">Open to freelance projects</p>
-        </aside>
       </div>
     </section>
   </main>
